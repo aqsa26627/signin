@@ -1,0 +1,49 @@
+
+/* reset defult style*/
+*{
+    margin: 3.2%;
+    padding:3px;
+    box-sizing:border-box;
+    
+}
+/*full page background*/
+body{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    background: linear-gradient(135deg,#110220 0% ,#14847E 20% ,rgb(141, 9, 2) 50%,rgb(1, 31, 7)55%,rgb(122, 5, 40),#cbd8ef 100%);
+}
+
+/*container box*/
+div {
+    background: rgba(22, 25, 31, 0.6);
+    /*padding: 3rem 2.5rem;*/
+    align-content: center;
+    border-radius: 15px;
+    box-shadow:0px 8px 25px rgba(6,3,3,2);
+    height:450px;
+    width:350px;
+    animation: fadeIn 2s ease;
+ 
+}
+h1{
+    text-align: center;
+    text-emphasis: none;
+}
+form{
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left: 2%;
+}
+@keyframes fadeIn{
+form{
+    opacity:0 ;
+   transform: translateY(200px);
+}
+to{
+opacity:1;
+transform: translateY(0px);
+}
+}
+   
