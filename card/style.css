@@ -1,0 +1,196 @@
+*{
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
+    font-family :sans-serif;
+}
+.container{
+    
+    display:flex;
+     gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    color:rgb(141, 240, 29);
+    font-size: 6rem;
+    text-align: center;
+}
+.subtitle{
+    color:rgb(201, 198, 198);
+    font-size:1.5rem;
+    text-align: center;
+}
+.control-cotainer{
+  margin-top: 20px; 
+  display:flex;
+    width:290px;
+    height:50px;
+    background-color:rgb(190, 247, 126);
+    align-items: center;
+    justify-content:center;
+    border-radius:25px;
+    color:rgb(53, 51, 51) ;
+    justify-content: space-evenly;
+    font-weight:bold;
+}
+.change{
+    color:black;
+    font-weight: bold;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #4f5d73; 
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height:19px;
+  width:19px;
+  left:4px;
+  bottom:4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+ .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+          border:none;
+            padding: 8px 18px;
+            background: rgb(190, 247, 126);
+            border-radius: 20px;
+            color: rgb(53,51, 51);
+            cursor: pointer;
+            font-weight:bold;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+         border: 1px solid black;
+            color:rgb(53, 51, 51);
+        }
+
+        .filter-btn.active {
+            background:rgb(190, 247, 126);
+            color: rgb(53,51, 51);
+             font-weight:bold;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1100px;
+        }
+        .cards {
+            background:rgb(190, 247, 126);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+            border-color: black;
+        }
+         .card.popular {
+            border: 4px solid black;
+            box-shadow: 0 8px 20px rgba(27, 78, 245, 0.12);
+        }
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 25px;
+            background:black;
+            color:rgb(141, 240, 29);
+            padding: 4px 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+         .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+         .card-desc {
+            color:rgb(53, 51, 51);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            min-height: 40px;
+        }
+
+ .card-price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color:black;
+        }
+          .features-list {
+            list-style: none;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+        .features-list li {
+            padding: 8px 0;
+            font-size: 0.92rem;
+            color: var(--text-main);
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+.features-list li::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+        }
+        .cta-btn {
+            width: 100%;
+            padding: 12px;
+            background:black;
+            color:rgb(141, 240, 29);
+            border: 2px solid black;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-btn:hover {
+            background:rgb(141, 240, 29) ;
+            color:black;
+        }
+ 

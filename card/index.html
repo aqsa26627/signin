@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="card">Choose your card</h1>
+    <p class="subtitle">Simple and elegant design for everyone.</p>
+    
+<div class="control-cotainer">
+    <!--monthly yearly-->
+    <span>Monthly</span>
+           <label class="switch"> 
+                <input type="checkbox" id="billingToggle">
+            <span class="slider"></span> 
+            </label> 
+            <span>Yearly</span>
+            <spain class="change">(Save 20%)</spain>
+</div>
+<div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="basic">BASIC</button>
+        <button class="filter-btn" data-filter="premium">PRIMUM</button>
+</div>
+<div class="cards-grid">
+        
+        <!-- Card 1: Starter -->
+        <div class="cards" data-category="basic">
+            <div class="card-icon">🚀</div>
+            <h3 class="card-title">Starter</h3>
+            <p class="card-desc">Perfect for individuals starting out with basic web projects.</p>
+            <div class="card-price" data-monthly="\$12" data-yearly="\$10">\$12 <span>/month</span></div>
+            <ul class="features-list">
+                <li>1 Website Project</li>
+                <li>Basic Analytics</li>
+                <li>Community Support</li>
+            </ul>
+            <button class="cta-btn">Get Started</button>
+        </div>
+
+        <!-- Card 2: Professional (Most Popular) -->
+        <div class="cards popular" data-category="premium">
+            <span class="badge">Most Popular</span>
+            <div class="card-icon">⭐</div>
+            <h3 class="card-title">Professional</h3>
+            <p class="card-desc">Ideal for growing developers and small teams scaling fast.</p>
+            <div class="card-price" data-monthly="\$29" data-yearly="\$24">\$29 <span>/month</span></div>
+            <ul class="features-list">
+                <li>Up to 5 Projects</li>
+                <li>Advanced Analytics</li>
+                <li>Priority Support</li>
+                <li>Custom Domain Integration</li>
+            </ul>
+            <button class="cta-btn">Get Started</button>
+        </div>
+
+        <!-- Card 3: Enterprise -->
+        <div class="cards" data-category="premium">
+            <div class="card-icon">💎</div>
+            <h3 class="card-title">Enterprise</h3>
+            <p class="card-desc">Full suite of custom solutions for established agencies.</p>
+            <div class="card-price" data-monthly="\$79" data-yearly="\$65">\$79 <span>/month</span></div>
+            <ul class="features-list">
+                <li>Unlimited Projects</li>
+                <li>Real-time Dashboard</li>
+                <li>24/7 Dedicated Support</li>
+                <li>Advanced Security</li>
+            </ul>
+            <button class="cta-btn">Contact Sales</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
