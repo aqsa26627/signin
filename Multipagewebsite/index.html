@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiweb pages</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="section">
+    <h1>MyBrand</h1>
+    <nav class="navbar" id="navbar" >
+    <a href="home.html">home</a>
+    <a href="about.html">About</a>
+    <a href="contect.html">contact</a>
+    </nav>
+    </div>
+
+    <div class="content">
+        <div class="contact-box">
+            <h1>Contact Us</h1>
+            <form id="contactform">
+                <div class="form-group">
+                    <label class="fullname"> Full Name</label>
+                        <input type=" text" id="fullname" placeholder="Enter fullname">
+                        <small class="error-msg" id="nameerror"></small>
+                </div>
+                <div class="form-group">
+                    <label class="email"> Email Address</label>
+                        <input type=" text" id="email" placeholder="Enter Email">
+                        <small class="error-msg" id="emailerror"></small>
+                </div>
+                <div class="form-group">
+                    <label class="msg">Massege</label>
+                        <textarea  id="msg" rows="4" placeholder="Enter msg"></textarea>
+                        <small class="error-msg" id="msgerror"></small>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button> 
+                <div id="form-success" class="success-msg"></div>
+            </form>
+        </div>
+    </div>
+     <footer>
+        <p>&copy; 2026 MyBrand. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
