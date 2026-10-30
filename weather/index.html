@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere - Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div >
+        <header>
+            <h1>
+                <i class="fa-brands fa-cloudversify"></i>weatherSphere
+            </h1>
+            <P>Get real-time weather details and forecasts worldwide</P>
+        </header>
+        <!-- search bar -->
+        <div class="search" style=" display:flex; flex-direction: column; align-items: center; justify-content: center;">
+            <form class="search-box">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="city-input" placeholder="Search any city"/>
+                </div>
+                
+                
+                <button  class="search-btn" type="submit">
+                    <span>Search</span>
+                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                </button>
+            </form>
+            <!-- recent searches section -->
+             <div>
+                <p class="set-recent" id="recent searches">
+                    <i class="fa-solid fa-rotate-right"></i>Recent Searches:
+                </p>
+               
+             </div>
+        
+        <div class="recent">
+<i class="fa-solid fa-location-crosshairs"></i>
+<div >
+ <span class="city-name">Karachi</span>
+      <span class="recent-temp">28°C</span>
+      </div>
+        </div>
+</div>
+    </div>
+    <script  src="app.js"></script>
+</body>
+</html>
